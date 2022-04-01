@@ -1,0 +1,330 @@
+.home {
+  justify-content: center;
+  max-width: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 94vw;
+}
+.home__banner {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 0px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#243b55, #243b55);
+}
+
+.container {
+  margin-left: 25%;
+  margin-top: -575px;
+  width: 330px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form--Signup {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 3px solid #7b1ceb;
+  border-radius: 20px;
+  color: #000;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.form--heading {
+  color: white;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.label {
+  color: white;
+}
+
+select {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none !important;
+  background: transparent;
+}
+
+select option {
+  background-color: #82caff;
+}
+
+.app__signupf {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.app__signup {
+  padding: 10px;
+}
+
+.app__signupimage {
+  align-self: center;
+  object-fit: contain;
+}
+
+.app__signupimage {
+  justify-content: center;
+}
+
+a {
+  position: relative;
+  width: 180px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid #7b1ceb;
+  border-radius: 20px;
+  color: #fff;
+}
+a:hover {
+  background-color: #7b1ceb;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.home__mainoptions {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 200px;
+  left: 200px;
+}
+.ownerpageform {
+  margin-top: 300px;
+  display: inline-flex;
+  max-width: 1080px;
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+}
+.manufactureform {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.rowcomponent {
+  padding: auto;
+}
+
+.manrows {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowone {
+  margin-top: 600px;
+}
+
+.buttonmanufacture {
+  width: 250px;
+  height: 50px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 3px solid #7b1ceb;
+  border-radius: 20px;
+  color: #000;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonmanufacture:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.containaddpro {
+  height: 500px;
+}
+
+.containprotosale {
+  height: 269px;
+}
+
+.containshippro {
+  height: 269px;
+}
+
+.containgetpro {
+  height: 200px;
+}
+
+.ownerpage {
+  padding: 0px !important;
+  margin-left: 0px !important;
+}
+
+.ownerpageform p {
+  color: #fff;
+  position: fixed;
+  top: 130px;
+  font-size: 40px;
+  position: relative;
+}
+
+.productdetails p {
+  color: #fff;
+  text-align: left;
+  font-size: 15px !important;
+  position: relative;
+}
+
+.productdetails {
+  color: #fff;
+  font-size: 15px !important;
+  position: relative;
+}
+
+.row3 {
+  justify-content: flex;
+}
+
+.container1 {
+  position: absolute !important;
+  top: 175vh;
+  bottom: 5vh;
+  left: 2px;
+  width: 60vw;
+  height: 130vh;
+  left: 0vw;
+}
+.eventdetails p {
+  font-size: 20px !important;
+  position: relative;
+}
+
+.buttonss {
+  width: 250px;
+  height: 50px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 3px solid #7b1ceb;
+  border-radius: 20px;
+  color: #000;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.buttonss:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+
+}
+.rows3{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.rows2{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content:space-between;
+}
+.rows1{
+  display: flex;
+  flex-direction: row;  
+  justify-content:space-between;
+}
+.ownerpageform p {
+  color: #fff;
+  position: fixed;
+  top: 130px;
+  font-size: 40px;
+  position: relative;
+}
+
+.containrecdistp{
+  height: 269px;
+}
+
+.containshipproductdist{
+  height: 269px;
+}
+
+.containapsdistp{
+  height: 269px;
+}
+.containgpddistp{
+  height: 269px;
+  display: block;
+}
+.distributorpage{
+  
+}
