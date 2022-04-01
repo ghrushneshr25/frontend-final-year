@@ -89,16 +89,15 @@ export default () => {
       <div className="container">
         <div className="form--Signup">
           <div className="form--heading">Add Distributor</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Manufacturer Address"
-              onChange={(e) => setAddress(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Manufacturer Address"
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );
@@ -125,16 +124,15 @@ export default () => {
       <div className="container">
         <div className="form--Signup">
           <div className="form--heading">Add Retailer</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Manufacturer Address"
-              onChange={(e) => setAddress(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Manufacturer Address"
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );
@@ -161,16 +159,15 @@ export default () => {
       <div className="container">
         <div className="form--Signup">
           <div className="form--heading">Add Consumer</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Manufacturer Address"
-              onChange={(e) => setAddress(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Manufacturer Address"
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );

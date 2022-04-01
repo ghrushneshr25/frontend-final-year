@@ -10,8 +10,6 @@ function Header(props) {
 
       <img src={logo} alt="Blockchain" className="header__logo" />
 
-      <p>{props.accountAddress}</p>
-
       {/* User  */}
       <div className="header__nav">
         {/* signin */}
@@ -24,6 +22,7 @@ function Header(props) {
 
         <div className="header__option">
           <span className="header__optionline2">
+            <p>{props.accountAddress}</p>
             <DateTime></DateTime>
           </span>
         </div>

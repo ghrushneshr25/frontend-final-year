@@ -116,36 +116,35 @@ export default () => {
       <div className="container containaddpro">
         <div className="form--Signup">
           <div className="form--heading">Add Product</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Product Name"
-              onChange={(e) => setProductName(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Product Description"
-              onChange={(e) => setProductDescription(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Product Type"
-              onChange={(e) => setProductType(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Collectible True/False"
-              onChange={(e) => setCollectible(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Weight"
-              onChange={(e) => setWeight(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Product Name"
+            onChange={(e) => setProductName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Product Description"
+            onChange={(e) => setProductDescription(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Product Type"
+            onChange={(e) => setProductType(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Collectible True/False"
+            onChange={(e) => setCollectible(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Weight"
+            onChange={(e) => setWeight(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );
@@ -168,21 +167,20 @@ export default () => {
       <div className="container containprotosale">
         <div className="form--Signup">
           <div className="form--heading">Add Product to Sale</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Product ID"
-              onChange={(e) => setproductId(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Product Price"
-              onChange={(e) => setproductPrice(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Product ID"
+            onChange={(e) => setproductId(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Product Price"
+            onChange={(e) => setproductPrice(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );
@@ -233,21 +231,20 @@ export default () => {
       <div className="container containshippro">
         <div className="form--Signup">
           <div className="form--heading">Ship Product</div>
-          <form autocmoplete="off">
-            <input
-              type="text"
-              placeholder="Product ID"
-              onChange={(e) => setproductId(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Address"
-              onChange={(e) => setshippedToAddress(e.target.value)}
-            />
-            <button className="button" onClick={submitValue}>
-              Submit
-            </button>
-          </form>
+
+          <input
+            type="text"
+            placeholder="Product ID"
+            onChange={(e) => setproductId(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Address"
+            onChange={(e) => setshippedToAddress(e.target.value)}
+          />
+          <button className="button" onClick={submitValue}>
+            Submit
+          </button>
         </div>
       </div>
     );
@@ -331,7 +328,6 @@ export default () => {
       <Header accountAddress={accountAddress} />
       <img src={bg} alt="banner.jpg" className="home__banner" />
       <div className="manufactureform">
-        
         <div className="manrows rowtwo">
           <AddProductComponent />
           <ForSaleByManufacturerComponent />
