@@ -324,7 +324,9 @@ export default () => {
         ""
       )}
       {productDetails && displayDetails ? (
-        <ProductDetailsComponent details={productDetails} />
+      <div className="container4">
+            <ProductDetailsComponent details={productDetails} />
+            </div>
       ) : (
         ""
       )}

@@ -5,7 +5,7 @@ export default (props) => {
   return (
     <div>
       {props.owned.map((product) => (
-        <p key={product[0]}>
+        <p className="container3" key={product[0]}>
           {product[0] + " " + product[1] + " " + product[2]}
         </p>
       ))}

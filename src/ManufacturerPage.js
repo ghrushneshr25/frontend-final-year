@@ -340,13 +340,17 @@ export default () => {
           Owned Products
         </button>
         {ownedProducts && ownedDisplay ? (
-          <OwnedProductComponent owned={ownedProducts} />
-        ) : (
+            <div className="containermanpageowner">
+            <OwnedProductComponent owned={ownedProducts} />
+            </div>
+        ) : (   
           ""
         )}
 
         {productDetails && displayDetails ? (
-          <ProductDetailsComponent details={productDetails} />
+          <div className="container container2">
+            <ProductDetailsComponent details={productDetails} />
+          </div>
         ) : (
           ""
         )}

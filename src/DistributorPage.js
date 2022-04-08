@@ -324,12 +324,14 @@ export default () => {
             ""
           )}
           {shippedProducts && shippedDisplay ? (
+           
             <ShippedProductComponent shipped={shippedProducts} />
-          ) : (
+        ) : (
             ""
           )}
-          {productDetails && displayDetails ? (
+          {productDetails && displayDetails ? ( <div className="container4">
             <ProductDetailsComponent details={productDetails} />
+            </div>
           ) : (
             ""
           )}

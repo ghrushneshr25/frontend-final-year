@@ -173,10 +173,10 @@ export default () => {
     );
   };
 
+  const [displayDetails, setDisplayDetails] = useState(false);
+  const [productDetails, setProductDetails] = useState();
   const FindProductComponent = () => {
     const [productId, setproductId] = useState("");
-    const [displayDetails, setDisplayDetails] = useState(false);
-    const [productDetails, setProductDetails] = useState();
 
     const getProductDetails = async (productId) => {
       let productState = -1;
@@ -192,23 +192,7 @@ export default () => {
       productState = details["productState"];
 
       let events = [];
-      // let state = [
-      //   "EProducedByManufacturer",
-      //   "EForSaleByManufacturer",
-      //   "EShippedByManufacturer",
-      //   "EReceivedByDistributor",
-      //   "EForSaleByDistributor",
-      //   "EShippedByDistributor",
-      //   "EReceivedByRetailer",
-      //   "EForSaleByRetailer",
-      //   "EShippedByRetailer",
-      //   "EReceivedByCustomer",
-      //   "ECollectibleForSaleByCustomer",
-      //   "EShippedtheCollectibleByCustomer",
-      //   "EReceivedCollectibleByCustomer",
-      // ];
-      // let i = 0;
-      // while (i <= productState) {
+
       const e1 = await supplyChainContract.getPastEvents("allEvents", {
         filter: { uid: productId },
         fromBlock: 0,
@@ -219,8 +203,6 @@ export default () => {
         if (j.returnValues.uin == productId) {
           events.push(j);
         }
-        // }
-        // i++;
       }
 
       return [details, events];
@@ -256,13 +238,6 @@ export default () => {
             )} */}
           </div>
         </div>
-        {productDetails && displayDetails ? (
-          <div className="container container1">
-            <ProductDetailsComponent details={productDetails} />
-          </div>
-        ) : (
-          ""
-        )}
       </div>
     );
   };
@@ -289,6 +264,13 @@ export default () => {
         <div className="rows row3">
           <FindProductComponent />
         </div>
+        {productDetails && displayDetails ? (
+          <div className="container container1">
+            <ProductDetailsComponent details={productDetails} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

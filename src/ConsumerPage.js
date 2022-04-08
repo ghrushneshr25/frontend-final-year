@@ -379,7 +379,9 @@ export default () => {
             ""
           )}
           {productDetails && displayDetails ? (
+            <div className="container5">
             <ProductDetailsComponent details={productDetails} />
+            </div>
           ) : (
             ""
           )}

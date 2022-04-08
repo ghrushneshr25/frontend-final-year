@@ -1,16 +1,20 @@
 .home {
   justify-content: center;
-  max-width: 1500px;
-
   margin-left: auto;
   margin-right: auto;
-  max-width: 94vw;
 }
 .home__banner {
   width: 100%;
   z-index: -1;
   margin-bottom: 0px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  
+}
+
+
+
+.prevent-scrolling {
+  height : 100vh;
 }
 
 .home__row {
@@ -249,16 +253,20 @@ a:hover {
 }
 
 .container1 {
-  position: absolute !important;
-  top: 175vh;
-  bottom: 5vh;
-  left: 2px;
-  width: 60vw;
-  height: 130vh;
-  left: 0vw;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+  margin-left: -593px;
+  margin-top: 20px;
+  height: 120vh;
+  width: fit-content;
+
 }
 .eventdetails p {
-  font-size: 20px !important;
+  font-size: 20p  x !important;
   position: relative;
 }
 
@@ -306,7 +314,7 @@ a:hover {
   color: #fff;
   position: fixed;
   top: 130px;
-  font-size: 40px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -327,4 +335,57 @@ a:hover {
 }
 .distributorpage{
   
+}
+
+.container2 {
+  position: relative !important;
+  top:135vh!important;
+  bottom: 5vh;
+  left: 25vw;
+  width: 60vw;
+  height: 90vh;
+  color: #fff !important;
+}
+
+.container3 {
+  width: 330px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  left: 40px;
+
+  color: white;
+}
+
+.container4 {
+   padding: 30px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+    margin-left: -390px;
+    margin-top: -150px;
+    height: 120vh;
+}
+
+.container5 {
+  padding: 30px;
+   transform: translate(-50%, -50%);
+   background: rgba(0, 0, 0, 0.5);
+   box-sizing: border-box;
+   box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+   border-radius: 10px;
+   margin-left: -390px;
+   margin-top: 169px;
+   height: 120vh;
+}
+
+.containermanpageowner{
+  margin-left: 760px;
+  margin-top: 53px;
+  color: white;
 }

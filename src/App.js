@@ -1,4 +1,6 @@
 import React from "react";
+import Particles from "react-tsparticles";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,7 +18,19 @@ import Header from "./Header";
 
 
 function App() {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   return (
+
+
+    
     <div className="App">
       <Router>
         <Routes>
@@ -31,7 +45,13 @@ function App() {
           <Route path="/consumer" element={<ConsumerPage />}></Route>
         </Routes>
       </Router>
+      
+
+
     </div>
+
+            
+    
   );
 }
 
